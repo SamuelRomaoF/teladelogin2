@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registrar.css">
+    <title>Registrar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Registrar</h2>
+            <div class="input-box">
+                <input type="text" id="usuario" name="usuario" required>
+                <span>Usuário</span>
+                <i></i>
+                <span id="usuario-aviso" class="aviso-span"></span>
+            </div><!--input-->
+            <div class="input-box">
+                <input type="password" id="senha" name="senha" required>
+                <span>Senha</span>
+                <i></i>
+                <span id="senha-aviso" class="aviso-span"></span>
+            </div><!--input-->
+            <div class="input-box">
+                <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+                <span>Confirmar Senha</span>
+                <i></i>
+                <span id="confirmarSenha-aviso" class="aviso-span"></span>
+            </div><!--input-->
+            <div class="links">
+                <a href="index.html">Voltar para o login</a>
+            </div><!--links-->
+            <input type="submit" value="Registrar" onclick="verificarRegistro()">
+            <span id="aviso" style="color: red;"></span>
+            <span id="avisoSucesso" class="aviso-sucesso"></span> <!-- Corrigido o ID -->
+        </div><!--form-->
+    </div><!--container-->
+    <script src="registrar.js"></script>
+</body>
+</html>

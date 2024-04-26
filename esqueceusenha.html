@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="esqueceusenha.css">
+    <title>Esqueceu a Senha</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Esqueceu a Senha</h2>
+            <div class="input-box">
+                <input type="email" id="email" name="email" required>
+                <span>Email</span>
+                <i></i>
+                <span id="email-aviso" class="aviso-span"></span>
+            </div><!--input-->
+            <div class="links">
+                <a href="index.html">Voltar para o login</a>
+            </div><!--links-->
+            <input type="submit" value="Enviar Email" onclick="verificarEmail()">
+            <span id="aviso" style="color: red;"></span>
+        </div><!--form-->
+    </div><!--container-->
+    <script src="esqueceusenha.js"></script>
+</body>
+</html>
